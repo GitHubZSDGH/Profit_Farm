@@ -12,4 +12,7 @@ package com.profitfarm.hlks.profit_farm.activity;
 
 
 public class Test {
+
+    String test;
+
 }
