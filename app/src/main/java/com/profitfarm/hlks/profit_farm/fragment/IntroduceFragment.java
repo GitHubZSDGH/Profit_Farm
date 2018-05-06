@@ -18,7 +18,6 @@ public class IntroduceFragment extends BaseFragment {
 
     @Override
     public void initView(View view) {
-
     }
 
     @Override

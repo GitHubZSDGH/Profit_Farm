@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/item_market_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:text="草原羊第一期" />
+
+    <TextView
+        android:id="@+id/item_market_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/item_market_title"
+        android:textColor="#FF944E"
+        android:textSize="16sp"
+        tools:text="火热进行" />
+
+    <TextView
+        android:id="@+id/item_market_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_market_title"
+        android:layout_marginTop="5dp"
+        android:textColor="#999999"
+        tools:text="截止2018-03-05 19:35" />
+
+    <TextView
+        android:id="@+id/item_market_profit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_market_time"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="#FF4A4A"
+        android:textSize="28sp"
+        tools:text="1.8%" />
+
+    <TextView
+        android:id="@+id/item_market_profit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_market_profit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        tools:text="预期年化收益率" />
+
+    <LinearLayout
+        android:id="@+id/item_market_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_market_profit_text"
+        android:layout_marginTop="5dp"
+        android:divider="@drawable/shape_market_divider"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <include
+            layout="@layout/include_item_market"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <include
+            layout="@layout/include_item_market"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <include
+            layout="@layout/include_item_market"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/item_market_lin"
+        android:layout_marginTop="20dp"
+        android:background="#FF944E"
+        android:gravity="center"
+        android:text="立即抢购"
+        android:textColor="#fff" />
+
+</RelativeLayout>

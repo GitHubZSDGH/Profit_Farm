@@ -11,8 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 
-import com.profitfarm.hlks.profit_farm.App;
-
 import butterknife.ButterKnife;
 
 
@@ -34,7 +32,6 @@ public abstract class BaseFragment extends Fragment {
         if (savedInstanceState != null) {
             getSavedInstanceState(savedInstanceState);
         }
-//        Log.e("chao", "onCreateView");
         return inflater.inflate(getLayoutId(), container, false);
 
     }
@@ -147,7 +144,6 @@ public abstract class BaseFragment extends Fragment {
 
     protected void cancleRequest() {
 //        App.myOkHttp.cancel(this);
-
     }
 
     @Override
