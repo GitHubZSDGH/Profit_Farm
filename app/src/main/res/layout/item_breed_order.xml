@@ -58,7 +58,7 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/item_breed_order_cancle"
+        android:layout_alignBottom="@id/item_breed_order_play"
         android:layout_marginTop="5dp"
         android:textColor="#999999"
         tools:text="￥179.00X6" />
