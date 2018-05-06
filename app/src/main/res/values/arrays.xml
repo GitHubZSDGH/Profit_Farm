@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="breed_order">
+        <item>全部</item>
+        <item>待提现</item>
+        <item>可提现</item>
+        <item>已提现</item>
+    </string-array>
+</resources>

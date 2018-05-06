@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/item_breed_order_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        tools:text="第003期：内蒙古锡林郭勒盟乌珠穆…" />
+
+    <TextView
+        android:id="@+id/item_breed_order_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#FF4E4E"
+        tools:text="可提现" />
+
+    <TextView
+        android:id="@+id/item_breed_order_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_breed_order_title"
+        android:layout_marginTop="5dp"
+        android:textColor="#999999"
+        tools:text="2018-02-08 19:35" />
+
+    <TextView
+        android:id="@+id/item_breed_order_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item_breed_order_time"
+        android:layout_marginTop="15dp"
+        android:background="#FF944E"
+        android:padding="8dp"
+        android:text="立即支付"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/item_breed_order_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_breed_order_time"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/item_breed_order_play"
+        android:background="@drawable/shape_stoke_666_1"
+        android:padding="8dp"
+        android:text="取消订单"
+        android:textColor="#666" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_breed_order_cancle"
+        android:layout_marginTop="5dp"
+        android:textColor="#999999"
+        tools:text="￥179.00X6" />
+
+</RelativeLayout>
