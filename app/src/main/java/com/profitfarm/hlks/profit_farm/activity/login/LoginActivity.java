@@ -19,7 +19,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     private ImageView mLoginColseIv;
     private ImageView mLoginYesIv;
     /**
-     * 忘记密码？
+     * 忘记密码？  dsadsadsa
      */
     private TextView mForgetPwdTv;
     /**
