@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--牧场-->
+    <include
+        android:id="@+id/sss"
+        layout="@layout/include_head_black" />
+
+    <ImageView
+        android:id="@+id/changjing_fu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sss"
+        android:scaleType="fitXY"
+        android:src="@drawable/changjing" />
+
+    <LinearLayout
+        android:id="@+id/zzzz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sss"
+        android:background="#50000000"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip_8"
+            android:layout_marginLeft="@dimen/dip_16"
+            android:layout_marginTop="@dimen/dip_8"
+            android:drawableLeft="@drawable/goat"
+            android:drawablePadding="@dimen/dip_8"
+            android:text="当前养殖："
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/home_sheep_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip_8"
+            android:layout_marginTop="@dimen/dip_8"
+            android:text="0只"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip_8"
+            android:layout_marginLeft="@dimen/dip_34"
+            android:layout_marginTop="@dimen/dip_8"
+            android:drawableLeft="@drawable/money"
+            android:drawablePadding="@dimen/dip_8"
+            android:text="预期收益："
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/home_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip_8"
+            android:layout_marginTop="@dimen/dip_8"
+            android:text="800元"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/home_qianggou_iv"
+        android:layout_width="@dimen/dip_56"
+        android:layout_height="@dimen/dip_70"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="178dp"
+        android:layout_marginStart="154dp"
+        android:src="@drawable/qianggou" />
+
+    <ImageView
+        android:id="@+id/home_sheep_iv"
+        android:layout_width="@dimen/dip_90"
+        android:layout_height="@dimen/dip_66"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="53dp"
+        android:layout_toEndOf="@+id/home_qianggou_iv"
+        android:src="@drawable/sheepimg" />
+
+</RelativeLayout>
