@@ -22,7 +22,8 @@
         <activity android:name=".activity.login.LoginActivity" />
         <activity android:name=".activity.login.RetrievePasswordActivity" />
         <activity android:name=".activity.login.ConfirmPwdActivity" />
-        <activity android:name=".activity.login.RegisterActivity"></activity>
+        <activity android:name=".activity.login.RegisterActivity" />
+        <activity android:name=".activity.info.OrderDetailsActivity"></activity>
     </application>
 
 </manifest>
