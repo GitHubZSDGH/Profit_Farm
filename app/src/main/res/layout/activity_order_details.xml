@@ -1,9 +1,265 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.profitfarm.hlks.profit_farm.activity.info.OrderDetailsActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <include layout="@layout/include_head_black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_74"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dip_16"
+        android:paddingLeft="@dimen/dip_20"
+        android:paddingRight="@dimen/dip_6"
+        android:paddingTop="@dimen/dip_10">
+
+        <TextView
+            android:id="@+id/details_title_head"
+            android:layout_width="@dimen/dip_86"
+            android:layout_height="@dimen/dip_18"
+            android:background="@color/color_ff944e"
+            android:gravity="center"
+            android:text="这是测试这是测试这是测试"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/details_title_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_90"
+            android:maxLines="2"
+            android:text="这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试这是测试"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_12"
+        android:background="@color/color_f7f7f7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_66"
+        android:background="@color/white"
+        android:divider="@drawable/shape_market_divider"
+        android:showDividers="middle"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/details_expect_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10000.00"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预期到账金额（元）"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/details_earnings_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="217.22"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预期收益（元）"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_12"
+        android:background="@color/color_f7f7f7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_26"
+            android:layout_marginTop="@dimen/dip_20"
+            android:text="交易明细"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_size_14"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_26"
+            android:layout_marginRight="@dimen/dip_28"
+            android:layout_marginTop="@dimen/dip_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买金额" />
+
+            <TextView
+                android:id="@+id/details_buy_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1,000.00x6" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_26"
+            android:layout_marginRight="@dimen/dip_28"
+            android:layout_marginTop="@dimen/dip_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="养殖周期" />
+
+            <TextView
+                android:id="@+id/details_culture_cycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1,000.00x6" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_26"
+            android:layout_marginRight="@dimen/dip_28"
+            android:layout_marginTop="@dimen/dip_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预期年化收益率" />
+
+            <TextView
+                android:id="@+id/details_expect_yield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1,000.00x6" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_26"
+            android:layout_marginRight="@dimen/dip_28"
+            android:layout_marginTop="@dimen/dip_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="买羊日期" />
+
+            <TextView
+                android:id="@+id/details_buy_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1,000.00x6" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_26"
+            android:layout_marginRight="@dimen/dip_28"
+            android:layout_marginTop="@dimen/dip_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提现时期" />
+
+            <TextView
+                android:id="@+id/details_get_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1,000.00x6" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_26"
+            android:layout_marginRight="@dimen/dip_28"
+            android:layout_marginTop="@dimen/dip_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到账方式" />
+
+            <TextView
+                android:id="@+id/details_get_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1,000.00x6" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_26"
+            android:layout_marginRight="@dimen/dip_28"
+            android:layout_marginTop="@dimen/dip_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单编号" />
+
+            <TextView
+                android:id="@+id/details_order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1,000.00x6" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

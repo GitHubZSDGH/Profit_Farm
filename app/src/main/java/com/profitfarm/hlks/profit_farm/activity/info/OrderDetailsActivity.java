@@ -1,15 +1,27 @@
 package com.profitfarm.hlks.profit_farm.activity.info;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
 import com.profitfarm.hlks.profit_farm.R;
+import com.profitfarm.hlks.profit_farm.base.BaseActivity;
 
-public class OrderDetailsActivity extends AppCompatActivity {
+public class OrderDetailsActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_order_details);
+    public int getLayoutId() {
+        return R.layout.activity_order_details;
+    }
+
+    @Override
+    public void initView() {
+
+    }
+
+    @Override
+    public void loadData() {
+
+    }
+
+    @Override
+    public void setListener() {
+
     }
 }
